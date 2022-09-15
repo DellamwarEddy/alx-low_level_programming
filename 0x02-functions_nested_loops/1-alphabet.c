@@ -1,4 +1,4 @@
-nclude"main.h"
+#include "main.h"
 
 
 
@@ -7,47 +7,34 @@ nclude"main.h"
 /**
  *
  *
- *  * print_alphabet_x10 - function that will print the alphabet 10 times
+ ** print_alphabet 
  *
  *
- *   *
- *
- *
- *   */
+   */
 
 
 
 
 
-void print_alphabet_x10(void)
+void print_alphabet(void)
 
 
 {
 
 
-		int line, ch;
+		int ch;
 
 
 
 
 
-			for (line = 0; line <= 9; ++line)
+		for (ch = 'a'; ch <= 'z'; ++ch)
 
 
-					{
+						_putchar(ch);
 
 
-								for (ch = 'a'; ch <= 'z'; ++ch)
-
-
-												_putchar(ch);
-
-
-										_putchar('\n');
-
-
-											}
+				_putchar('\n');
 
 
 }
-
